@@ -6,6 +6,7 @@ pipeline {
     }
     environment {
         GO111MODULE = 'on'
+        GIT_TIMEOUT = '600' // Set Git timeout to 10 minutes (600 seconds)
     }
     stages {
         stage('dev') {
